@@ -183,6 +183,9 @@ public class CommandExecutor {
                                   for (String winHandle : driver.getWindowHandles())
                                       driver.switchTo().window(winHandle);
                                   break;
+            case "Switch Frame": Reporter.log("Switching Frame");
+           						driver.switchTo().frame(driver.findElement(getBy(elementIdentifier,identifierType)));
+                                 break;
             case "Close Window": Reporter.log("Closing current window");
                                  driver.close();
                                  driver.switchTo().window(baseWindowHdl);
