@@ -33,7 +33,11 @@ public class CommandExecutor {
     String DBUser= "user";
     String DBPassword= "";
     
-    HashMap<String,String> varsToUse = new HashMap<String,String>();
+    public Map<String, String> getParamMap() {
+		return paramMap;
+	}
+
+	HashMap<String,String> varsToUse = new HashMap<String,String>();
     
     public CommandExecutor(WebDriver driver) {
         this.driver = driver;

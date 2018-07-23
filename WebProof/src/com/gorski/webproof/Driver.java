@@ -26,7 +26,7 @@ public class Driver {
 			throws FileNotFoundException, IOException {
 			List<XmlSuite> suites = new ArrayList<>();
         
-        String[] fileArray = {"c:/Users/joedaddy/Documents/NOAA.xls"};
+        String[] fileArray = {"NOAA.xlsx"};
         //String fileName;
         if(args.length > 0) {
         	//fileName = args[0];
